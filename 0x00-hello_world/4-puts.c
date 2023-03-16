@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-\* The main function calls 
-* the function puts that prints out the string passed to it*\
+\* The main function calls  the function puts that prints out the string passed to it*\
 
 int main(void)
 {
