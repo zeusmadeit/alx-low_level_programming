@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	int i,j,k;
+	int i, j, k;
 
 	i = '0';
 	while (i <= '7')
