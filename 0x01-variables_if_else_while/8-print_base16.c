@@ -2,13 +2,15 @@
 
 /**
  * main - Entry point
- * Return: returns 0 Success
-*/
+ * Return: Return 0 Sucess
+ */
 int main(void)
 {
 	int i;
 
-	for (i = 48; i <=63; i++)
+	for (i = '0' ; i <= '9' ; i++)
+		putchar(i);
+	for (i = 'a' ; i <= 'f' ; i++)
 		putchar(i);
 	putchar('\n');
 	return (0);
