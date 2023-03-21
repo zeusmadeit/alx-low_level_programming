@@ -7,6 +7,16 @@
 */
 int	main(void)
 {
-	printf("_putchar\n");
+	char s;
+	int i;
+
+	s = "_putchar";
+	i = 0;
+	while (s[i] != '\0')
+	{
+		_putchar(s[i]);
+		i++;
+	}
+	_putchar('\n');
 	return(0);
 }
