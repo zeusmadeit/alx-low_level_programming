@@ -8,8 +8,9 @@
 */
 int	main(void)
 {
-	char s[8] = "_putchar";;
 	int i;
+	char s[8] = "_putchar";
+
 
 	i = 0;
 	while (s[i] != '\0')
