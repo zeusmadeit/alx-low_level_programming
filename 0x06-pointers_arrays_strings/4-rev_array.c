@@ -5,18 +5,22 @@
  * reverse_array - reverse array
  * @a : array of int
  * @n : array length
- */
+*/
 void	reverse_array(int *a, int n)
 {
 	int i;
-	int temp;
+	int j;
+	int tmp;
 
 	i = 0;
-	while (i <= n / 2)
+	j = n - 1;
+
+	while (i < j)
 	{
-		temp = a[i];
-		a[i] = a[n - i];
-		a[n - i] = temp;	
+		tmp = a[i];
+		a[i] = a[j];
+		a[j] = tmp;
 		i++;
+		j--;
 	}
 }
