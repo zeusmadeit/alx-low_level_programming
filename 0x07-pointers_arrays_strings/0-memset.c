@@ -2,7 +2,7 @@
 
 /**
  * _memset - sets or fills the block of memory with given argument
- * @*s: pointer to memory area
+ * @s: pointer to memory area
  * @b: character to fill memory with
  * @n: integer
  * Return: Returns a pointer to the memory area
