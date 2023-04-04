@@ -7,15 +7,17 @@
  * Return: Returns a pointer to the first occurrence of the character c
  */
 
-char	*_strchr(char *s, char c)
+char *_strchr(char *s, char c)
 {
 	while (*s)
 	{
+		s++;
+
 		if (*s == c)
 		{
-			return (*s);
+			return (s);
 		}
-		s++;
 	}
+
 	return (0);
 }
