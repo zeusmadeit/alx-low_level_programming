@@ -3,7 +3,7 @@
 /**
  * is_prime_number - check for prime number
  * @n: number to be checked
- * Return; 1 if prime, else 0
+ * Return: 1 if prime, else 0
  */
 int	is_prime_number(int n)
 {
@@ -14,7 +14,7 @@ int	is_prime_number(int n)
  * is_prime: check if is prime number
  * @n: number
  * @i: number to divide @n by
- * Retur: 1 if prime, else 0
+ * Return: 1 if prime, else 0
  */
 int	is_prime(int n, int i)
 {
