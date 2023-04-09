@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
 
 /**
  * main - multiplies two numbers
@@ -7,21 +7,14 @@
  * @argv: array of cmd arguments
  * Return: always 0
  */
-int	main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
-	int a, b, result;
-
 	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
 	else
-	{
-		a = atoi(argv[1]);
-		b = atoi(argv[2]);
-		result = a * b;
-		printf("%d\n", result);
-	}
+		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 	return (0);
 }
