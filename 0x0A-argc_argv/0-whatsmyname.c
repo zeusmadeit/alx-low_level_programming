@@ -1,14 +1,4 @@
-#include "main.h"
-#include <unistd.h>
-
-/**
- * _putchar - prints @c to stdout
- * @c: character
- */
-void	_putchar(char c)
-{
-	write(1, c, 1);
-}
+#include <stdio.h>
 
 /**
  * main - entry point
@@ -17,15 +7,9 @@ void	_putchar(char c)
  * Return: return 0
  */
 
-int	main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
-	int i = 0;
-
-	while (argv[0][i] != '\0')
-	{
-		_putchar(argv[0][i]);
-		i++;
-	}
-	_putchar('\n');
+	if (argc > 0)
+		printf("%s\n", argv[0]);
 	return (0);
 }
