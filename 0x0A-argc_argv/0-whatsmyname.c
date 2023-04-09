@@ -1,5 +1,14 @@
 #include "main.h"
-#include <stdio.h>
+#include <unistd.h>
+
+/**
+ * _putchar - prints @c to stdout
+ * @c: character
+ */
+void	_putchar(char c)
+{
+	write(1, c, 1);
+}
 
 /**
  * main - entry point
