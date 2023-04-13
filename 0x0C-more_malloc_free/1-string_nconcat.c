@@ -60,5 +60,7 @@ char	*string_nconcat(char *s1, char *s2, unsigned int n)
 	str = malloc((_strlen(s1) + _strlen(s2) + 1) * sizeof(char));
 	if (str == NULL)
 		return (NULL);
-	return (_nconcat(_nconcat(str, s1, 0, _strlen(s1)), s2, _strlen(s1) + 1, n));
+	_nconcat(str, s1, 0, _strlen(s1));
+	_nconcat(str, s2, _strlen(s1) + 1, n);
+	return (str);
 }
