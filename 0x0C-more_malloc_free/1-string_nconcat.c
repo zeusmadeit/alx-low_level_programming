@@ -33,7 +33,7 @@ char	*_nconcat(char *s1, char *s2, int len, unsigned int n)
 	i = 0;
 	if (s2 == NULL)
 	{
-		return (s1);
+		s2 = "";
 	}
 	while (s2[i] != '\0')
 	{
