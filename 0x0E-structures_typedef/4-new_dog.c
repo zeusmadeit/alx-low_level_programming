@@ -1,52 +1,54 @@
 #include <stdlib.h>
-#include "main.h"
+#include "dog.h"
 
 int _strlen(char *s);
 char *_strcpy(char *dest, char *src);
+
 /**
- * new_dog - creates a new dog
- * @name: dog's name
- * @age: dog's age
- * @owner: dog's owner
- * Return: returns new dog of typr dog_t
+ * new_dog - ...
+ * @name: ...
+ * @age: ...
+ * @owner: ...
+ *
+ * Return: ...
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *my_dog;
+	dog_t *cutie_dog;
 	int name_l = 0, own_l = 0;
 
 	if (name != NULL && owner != NULL)
 	{
 		name_l = _strlen(name) + 1;
 		own_l = _strlen(owner) + 1;
-		my_dog = malloc(sizeof(dog_t));
+		cutie_dog = malloc(sizeof(dog_t));
 
-		if (my_dog == NULL)
+		if (cutie_dog == NULL)
 			return (NULL);
 
-		my_dog->name = malloc(sizeof(char) * name_l);
+		cutie_dog->name = malloc(sizeof(char) * name_l);
 
-		if (my_dog->name == NULL)
+		if (cutie_dog->name == NULL)
 		{
-			free(my_dog);
+			free(cutie_dog);
 			return (NULL);
 		}
 
-		my_dog->owner = malloc(sizeof(char) * own_l);
+		cutie_dog->owner = malloc(sizeof(char) * own_l);
 
-		if (my_dog->owner == NULL)
+		if (cutie_dog->owner == NULL)
 		{
-			free(my_dog->name);
-			free(my_dog);
+			free(cutie_dog->name);
+			free(cutie_dog);
 			return (NULL);
 		}
 
-		my_dog->name = _strcpy(my_dog->name, name);
-		my_dog->owner = _strcpy(my_dog->owner, owner);
-		my_dog->age = age;
+		cutie_dog->name = _strcpy(cutie_dog->name, name);
+		cutie_dog->owner = _strcpy(cutie_dog->owner, owner);
+		cutie_dog->age = age;
 	}
 
-	return (my_dog);
+	return (cutie_dog);
 }
 
 /**
@@ -71,6 +73,7 @@ int _strlen(char *s)
  * _strcpy - Copy a string
  * @dest: Destination value
  * @src: Source value
+ *
  * Return: the pointer to dest
  */
 char *_strcpy(char *dest, char *src)
