@@ -5,7 +5,8 @@
  * @name: person's name
  * @f: pointer to a function
  */
-void	print_name(char *name, void (*f)(char *))
+void print_name(char *name, void (*f)(char *))
 {
-	f(name);
+	if (name && f)
+		f(name);
 }
