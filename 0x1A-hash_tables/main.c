@@ -10,9 +10,8 @@ int main()
     char *s;
     hash_table_t *ht;
 
-    s = "James";
-    ht = hash_table_create(100);
-    ht != NULL ? printf("hash table created\n") : printf("failed to create hash table\n");
+    s = "cisfun";
+    ht = hash_table_create(1024);
     
     printf("HashTable address: %p\n", (void *)ht);
     printf("Size of array: %lu\n", ht->size);
@@ -21,13 +20,10 @@ int main()
 
     printf("%s => hash: %lu, key: %lu\n", s, hash_djb2((unsigned char *)s), key_index((unsigned char *)s, ht->size));
     
-    s = "cisfun";
+    s = "Don't forget to tweet today";
     printf("%s => hash: %lu, key: %lu\n", s, hash_djb2((unsigned char *)s), key_index((unsigned char *)s, ht->size));
     
-    s = "Nasty by nature";
-    printf("%s => hash: %lu, key: %lu\n", s, hash_djb2((unsigned char *)s), key_index((unsigned char *)s, ht->size));
-    
-    s = "Nasty by naturee";
+    s = "98";
     printf("%s => hash: %lu, key: %lu\n", s, hash_djb2((unsigned char *)s), key_index((unsigned char *)s, ht->size));
     return (EXIT_SUCCESS);
 }
