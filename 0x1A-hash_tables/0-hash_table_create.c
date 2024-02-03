@@ -5,7 +5,7 @@
  *
  * @size: size of the hash table to create
  *
- * @return: returns a new hash table
+ * Return: returns a new hash table
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
