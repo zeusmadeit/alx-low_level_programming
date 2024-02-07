@@ -20,5 +20,10 @@ int main()
     hash_table_set(ht, "Betty", "Cool");
     hash_table_set(ht, "98", "Battery Street");
     hash_table_print(ht);
+    hash_table_delete(ht);
+    if (ht == NULL)
+    {
+        printf("Program Executed Succesfully and Memory Cleaned Up Before Close\n");
+    }
     return (EXIT_SUCCESS);
 }
